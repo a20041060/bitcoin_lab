@@ -1,0 +1,359 @@
+charles@charless-MacBook-Pro ~ % docker run -it mengling333666/meng:p2sh /bin/bash
+WARNING: The requested image's platform (linux/arm64/v8) does not match the detected host platform (linux/amd64) and no specific platform was requested
+root@942da72c040f:/# bitcoind -regtest -daemon
+Bitcoin Core starting
+root@942da72c040f:/# bitcoin-cli -regtest -named createwallet wallet_name=miner1 descriptors=false
+{
+  "name": "miner1",
+  "warning": "Wallet created successfully. The legacy wallet type is being deprecated and support for creating and opening legacy wallets will be removed in the future."
+}
+root@942da72c040f:/# bitcoin-cli -regtest settxfee 0.00001
+true
+root@942da72c040f:/# bitcoin-cli -regtest -generate 100
+{
+  "address": "bcrt1q82967vfeh33a9nvrdp77rjune2r46xzxkz8hfl",
+  "blocks": [
+    "1bc0f24bf2e7500ae8c57a084e024f3bccd9476972ee03e2a2524c9909c87d39",
+    "16979f1847d9e8a40bd43725452a4e9e100f5155c60af0ad5409e383870a96f7",
+    "1a39954d500ce493e179b52ad59ba1742864a8020a6345bda8483f2ddb2b29ef",
+    "0ace38e2292eb235d1c41f0429b4b70b1f5f9ca296d7c678b2f4669b464cd031",
+    "45bb3c9b97414f3b1f8a0ca409b6a68f8946ef59f11a385e4e323a0f43ee5b0e",
+    "29dd3cd5d217506a8d0bc25bd800cfdb41b2e37948f03bc9267a16e1cec28647",
+    "5f9cf0735739ab4ad240e4ccb19ef9c7d859cb52e8f0446dbe6218f8230692c4",
+    "0ca43f032244617039ccad71881f8f900e7caa7da61f8f929a886f0a52eedf27",
+    "283cb4d8f0548b321c466cd264b4ad3ecd2cd32813e423f0f145e6427039e0d1",
+    "6480448047f51b623db038782c328367b9dda7c46533392debc01d781145d0c2",
+    "02b65194294d9ca8a558348ea81bc81c9fe0233c8fef8c847a93bdac1c8fa8f2",
+    "32f91711617e7fe0df4edaa38a0d815287b953713eba5bd9fff7bf4e577007eb",
+    "182b503c902d538a336f945dacf8b2917092031372df50057fc2cd5346b7cc7c",
+    "653bc22085101a0ce2686955fc720c973bc2d5ed4705d897c1cade6bda4c060e",
+    "3d1bf0479712440ad0527cf66ba88d30684ff8059829a7ab54ab903e69682695",
+    "07e4e95be2e08174bfb8684f40658b53dd61204055ab92ed557d84f8905d01d8",
+    "5400f9c532377a3f2a160c3c8b8c8179db664fc61bd9c02142419dce0f22097a",
+    "2793c74cb6a7f0a5ee7de4b3b8601a4e236bd513ccb9bdb92ad7bd17d440f180",
+    "5c439e05da769318ee2cf1e00856aafd4e96d11755d3ba9f59cfd23c3a195e74",
+    "034f96cd97b60d7bd1a66c40ccbb74e23692bfdaf470229836d8e153e03b1e5d",
+    "4e4af39f6bc2d87c92a4155f82dbbff3e362553452dca5909b9e9ee157f3e9b2",
+    "2f70d8cce5e058c8ec82cf81c0c46e2721dae649e0e728f92b0ccc553d4ab8ce",
+    "33ad95b00db37175b254740e9388d03af842ca6d41d3572b51fefac7a1d89f4c",
+    "451f068833d3f94a90d43496843c3e4fc83f1dde178e17f87de41db8750ab32e",
+    "5d2352fcbf3ba98d62152f6de6df06ec82165cf45c37c4f10100b0d3cb183577",
+    "0313ba1d4d5614551ae176da7fb2a732d4f96439d6fc11aeb8f4ec9fbafab4ce",
+    "51d9e60b1c3824bcb91d2e7201147c7f15ef82d9606e4f4fed8747357447ee84",
+    "6c27bd5609ad554682a55d275fea9b9097e0c223e0a7c51df550b5f2809bc6b1",
+    "692394f042d63f5d6b9b6e4fb6f81c2aaa1e58eba76d08ae9aa731b13ef28424",
+    "75b4baadad0feb3dbf2fdf178bd965d9214e70aa81552791530e5b83ce0b2153",
+    "5f1dcf8f60befcffc60342e43a5c499ba14b3f1de6fdee73028219aa14b8a8bc",
+    "7618620852a9a556ea441f728ba7c1184d25fae99e5d26d276e80fcbc0ce797e",
+    "67671018da54802b9c06ff4dfd5c9a78f07869d64eb7307a6e87b878f340b520",
+    "03d8bcf78e6ce74c6dba645e3caa3387ff1eaae3c3a515ed4e1a1263bc066b4c",
+    "6c77b5a4c16dccdfb12d02ea7b095984462ffc7e8b8655afb6f3316416a0c911",
+    "347e4af604f8ff013e904c56d34dee357f432f906c0678c2a812822eb75a4592",
+    "1656f4109c3b88eab7294ce18471da80d556e6039f696fcb7e18f74aded1b1cd",
+    "65526221e473bbaaa8c66b2eaaab7c34971269c7299f93d9b9d6ebf17b06dae0",
+    "514e31a800de9ae61905d712ea7d036e8d3614db2b23218b4460cdcfe6793d62",
+    "37f473bc7c28690b4661064bd275e5009b3d1dd1471be61c24d9b47ad2a3cd28",
+    "7aaca6818f3fd6b91c09f555641b3fe5854db7b77db17122454e1ef5f6ed5851",
+    "2c688f05d094339717a966fd33a7444c78601c787ca83bff7b36848f88e70642",
+    "391928b18a1cc374a084ab3fa2f3ebe2b36ce3c82cf547c8adfe3cd5ad9d6a27",
+    "428086d10df2421491ec75dbed791f32e20452bc3a33aa22fff005867d25a7fd",
+    "1fdd96afa773ff0684728115fc46b17edc846551061b8e7ac357c99a72269911",
+    "7b0873ff9de9a9993a8dff86e30b5566aade2c9d4599ff70fe1dda6587a53217",
+    "3eff648122052fc211840ab007e36d3f1d1a7bb56602925b469906c3b740ca00",
+    "07518ab28675d782278ef73481ad99aea8219db78fe9ca011fe83a9d01cdd8e3",
+    "7fdff7b8708e21da234d123fbf51d7d7f63f9a07389085a1f85167b10c8313f0",
+    "52145ab6aa3e691fa6ad70501e8feb6d5e8ebad92be5eb2756e7ef1c17e10631",
+    "1305ac83140d4ab46104f449167c323c9f1a3cf6125e038cbac7600105fd69c7",
+    "3bc0130ef4c772f7ef3db2e94e01ca6e181540859a5404a5c57b1c0de3c97421",
+    "15c985bf9110d9620d0fbc09ae6d65724d2441c0ba85e072daa8c5fadba75722",
+    "36453e856d419aa0c85c714ba5377fc4c7b9b8ae4582a2d50204bc0c38c1f514",
+    "470f2dbfc0eefe15b2cec430fc2448a46d02c355dea44f317cc08f78384716f2",
+    "61a73ae538d32cc83cccabc67209c33bb942a2813431245384f328d7c760f723",
+    "20bfad5ccc329324ae9a43a8556c7d10cddf5b63c01206c7ee60d5863504be39",
+    "35d35cc71066b2ffa4c523278e7712e4dc8061908aaf028957818567ee244335",
+    "7da4b286ff09e494b123b36a0e9b4ec93184d3c7ce02f2d6e7e133f0d8110a5f",
+    "60d2ba45e24e4926bd66ef05d5bfd052999cacc73e38ed89fbbec73ca871d2b8",
+    "1aa3f69f23ff0a584571ecbc58e5abfd02337cf8e448f05145c77e43796f49eb",
+    "0e11e298b5c8aa912f22da9e76f6345c0f7179e78a801ccfecd831436dcdc100",
+    "31414ae2d6cf7b969f8c5d8993509dde8f97dd207d22199ee4162c83989f1f64",
+    "6ad9cfcf6c2d423aeac80d3b8044e1bc8b8966c5577f88ffe3657f3209054613",
+    "1331fadf2e7ca7db83961f331e8081c8d841f850e9543fc50cfffa5359e97da4",
+    "12f7a5f27528d323d22cdc5585170f9f89f9930b6cbdc43648c80917b74cd19b",
+    "1d42c01f96fd4ec28d9f45acf0eba33006c7d36ea3088858568c1b524f0ccc06",
+    "725695d09b7a6b4c502324cf5efee4cd95eddb73e4e3df9b9fcfc3f71956e495",
+    "56fecfaba9a96e3a7836ecfa8f24c06786b63c96c141e30d84c6d4e92b7c35cf",
+    "2a7ed08485816aefff9622682f9640361684aad52df55c585ac6dab22f3faae1",
+    "69d9bc7e300042c1113b20ee8643efa4226a8c214e38858e3e79d8374d305785",
+    "4f83a846bbdc2be2527ce352a989ce3ee0cac6839ca8e1635ff520a80901e563",
+    "272204263be60a520f317ba1b688428e8c70855f2c4558bc839be0489913f231",
+    "1aa808ad1200f6cbc37b3fcc8b764a4e46fc38927d671dd89593460ff71b7f2e",
+    "50d8b948f91b55e86e8e581558fe3ba530b29c1a72e60cbf2b9d5131f1767299",
+    "3a26cd8a6939d5c7bf77739bba70ba6be9cce4bf26b9e300e1ffd5a9825f5d9f",
+    "706431395834427cef2767759d143e2eeab6f65f6f8a491bc7e1ae6885d7f424",
+    "4947ace86c7ae694241f2433bdce289885aad24cdb0fcac93997eb6869f886cb",
+    "7c5fe191dfb4a83255ba83c3f6114f57b230cf4c5f735c9324044daf3026d0fd",
+    "17186539a982b78f813c04712abc2ed890e977350c0aa86af78ea72817879143",
+    "518fd819cd90e89a3b04cad45271d0f43f2c3a9ff7893b26074c713232e8b5c8",
+    "73c045b963d5d0e200c37e7d5695178c12ea9ba0c9daa50bd1f134f612303dda",
+    "79b57857f80fa23119ca4280bab6f5fff7aafcb51c6c166a2c5b9ccaf27c7360",
+    "26e95e3a201a84413b850d4b33a52fe319a61b923a995b24516525f7cf85d50e",
+    "726d272cc4181c2efa23bd8557b5b461671e3e64c0dd4c1d67308bdf0327f46a",
+    "77e372f1fcc8a1b532f2f793f410f7c2ae4f18429789b4f1118202a32cc8ef89",
+    "2a0bf9b29247818cbe7024b4b08a1ebb8687fe98f846cf91801d0501691936ef",
+    "1f13f24d6a4b780928af6824597040a3cd084c36764c0319b192b468e8de2076",
+    "5e28bfd9d6e937d61fdf88d59fdcba3c3c3235795c8ae87ac4157ab6dfbbe243",
+    "30be3b630085940e659a4d7c798e5933b7aa19230267d5c589d48ca0a7fad940",
+    "7845b9b71f5f24413a7f59b4752f2d3f499ae50dd5da4085aad953ffa6885f13",
+    "1b32f7938723dc124eca9998160c97b621803156d1ca6fcaa77eebc034ee8eb0",
+    "537e98445080d15784d2c9885ef3b79e06625b8c9390881d4df20194802ab379",
+    "285df95cd0178716a1fb0a75d0f610260b5db93acdf6e45cc2f15c57e967101f",
+    "73ea9ac437f35d0b154fc0011acc2f06bdbc154788c2f471317cedd11f28518f",
+    "10becaaa9644158782af2918f7b8222bdd29c6f725507e28feeddbbba3cf5864",
+    "1f236b7ef567d8d5273b417fc3c2537a06b59bbc2bc1ca5769e7e95d38a5ce60",
+    "4e2c8800890ff87c0c29f9a67b3b3c2b928fec69d9b06d16079d023dad433026",
+    "0c187db32a4c18fc2101f0ac42593bfb8f04e7083a0eaafc6c9f1a870ebf9860",
+    "4eccb3bb7b49f8627477a34522e71c94662a645721162f01bdd729ea572a594c"
+  ]
+}
+root@942da72c040f:/# bitcoin-cli -regtest getbalance
+0.00000000
+root@942da72c040f:/# bitcoin-cli -regtest -generate 1
+{
+  "address": "bcrt1qaygkzrnz6pzhwvl9y98zdfxj8sadnx7tj0s0nw",
+  "blocks": [
+    "3d5ce64d7bc81dcd73774a667f1c2b5eb1f4ae1ce3c70a8a37d65d56d6260ff4"
+  ]
+}
+root@942da72c040f:/# bitcoin-cli -regtest getbalance
+50.00000000
+root@942da72c040f:/# mkdir ass3
+root@942da72c040f:/# cd ass3/
+root@942da72c040f:/ass3# ls
+p2sh.py
+root@942da72c040f:/ass3# python3 p2sh.py
+Bob address: bcrt1qvajlcpukt3un7z6uvujxfr2u58c47p98fk52vt
+Redeem script: a8206c60f404f8167a38fc70eaf8aa17ac351023bef86bcb9d1086a19afe95bd53338876a9146765fc07965c793f0b5c6724648d5ca1f15f04a788ac
+P2SH scriptPubKey a914e6cbcb755e33dd3e89ef908be13c60315f32c48287
+P2SH address: 2NEHZYK7V2EWxxu5y2KoPeDNV6LDLjozk7F
+Transaction ID: d98adfe86aea427033189316e32fc1793b9180a5ef0e74443057538877e926d0
+Raw fund_tx b'\xd0&\xe9w\x88SW0Dt\x0e\xef\xa5\x80\x91;y\xc1/\xe3\x16\x93\x183pB\xeaj\xe8\xdf\x8a\xd9'
+Transaction Details: {'address': '2NEHZYK7V2EWxxu5y2KoPeDNV6LDLjozk7F', 'category': 'send', 'amount': Decimal('-1.00000000'), 'vout': 1, 'fee': Decimal('-0.00000143'), 'abandoned': False}
+Bob address: bcrt1qvajlcpukt3un7z6uvujxfr2u58c47p98fk52vt
+Bob secret key: cNADQKihTehcxyRox5Lk44R1LibLJk8YuxwS69pNCJqviBXVB47b
+preimage hex: 107661134f21fc7c02223d50ab9eb3600bc3ffc3712423a1e47bb1f9a9dbf55f
+{
+  "hash": "40889c6b927a9e97b977e3837bfbc6d45a4c48e12ee45058f2181dc6b58c4921",
+  "confirmations": 1,
+  "height": 102,
+  "version": 536870912,
+  "versionHex": "20000000",
+  "merkleroot": "d57ae63ac6b88fd7fb6e66c028cd968c1fe80234f80731cb16151e3b4a150b72",
+  "time": 1681612587,
+  "mediantime": 1681612531,
+  "nonce": 0,
+  "bits": "207fffff",
+  "difficulty": 4.656542373906925e-10,
+  "chainwork": "00000000000000000000000000000000000000000000000000000000000000ce",
+  "nTx": 2,
+  "previousblockhash": "3d5ce64d7bc81dcd73774a667f1c2b5eb1f4ae1ce3c70a8a37d65d56d6260ff4",
+  "strippedsize": 328,
+  "size": 473,
+  "weight": 1457,
+  "tx": [
+    {
+      "txid": "b3828d2e7c0f36ef887e1d841a5510463aad0a788f2b28514635f76b681fa97a",
+      "hash": "42681fa1ac7308308c3866b50ee24ddb5c6381a5aeb1abca2dc2bedd7866b255",
+      "version": 2,
+      "size": 168,
+      "vsize": 141,
+      "weight": 564,
+      "locktime": 0,
+      "vin": [
+        {
+          "coinbase": "016600",
+          "txinwitness": [
+            "0000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "sequence": 4294967295
+        }
+      ],
+      "vout": [
+        {
+          "value": 50.00000143,
+          "n": 0,
+          "scriptPubKey": {
+            "asm": "0 901983891d4e12fff5eea296cf75a5b06ab967da",
+            "desc": "addr(bcrt1qjqvc8zgafcf0la0w52tv7ad9kp4tje76a6vh32)#hgcpllvt",
+            "hex": "0014901983891d4e12fff5eea296cf75a5b06ab967da",
+            "address": "bcrt1qjqvc8zgafcf0la0w52tv7ad9kp4tje76a6vh32",
+            "type": "witness_v0_keyhash"
+          }
+        },
+        {
+          "value": 0.00000000,
+          "n": 1,
+          "scriptPubKey": {
+            "asm": "OP_RETURN aa21a9ed6d449a58d293918ec881abc2e12cfcf4501b84bdb13aeb1fb13bd45b084c303a",
+            "desc": "raw(6a24aa21a9ed6d449a58d293918ec881abc2e12cfcf4501b84bdb13aeb1fb13bd45b084c303a)#e0zc5e6d",
+            "hex": "6a24aa21a9ed6d449a58d293918ec881abc2e12cfcf4501b84bdb13aeb1fb13bd45b084c303a",
+            "type": "nulldata"
+          }
+        }
+      ],
+      "hex": "020000000001010000000000000000000000000000000000000000000000000000000000000000ffffffff03016600ffffffff028ff2052a01000000160014901983891d4e12fff5eea296cf75a5b06ab967da0000000000000000266a24aa21a9ed6d449a58d293918ec881abc2e12cfcf4501b84bdb13aeb1fb13bd45b084c303a0120000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "txid": "d98adfe86aea427033189316e32fc1793b9180a5ef0e74443057538877e926d0",
+      "hash": "baa885e286d8795b29fc92124cbbf3c792b0ba99e206f92fd1dd412bb9fa21fa",
+      "version": 2,
+      "size": 224,
+      "vsize": 143,
+      "weight": 569,
+      "locktime": 101,
+      "vin": [
+        {
+          "txid": "fc5d2ec0b2c4b8778be9dabda068bfa038eae3cb238911bd7997e42fb16007fb",
+          "vout": 0,
+          "scriptSig": {
+            "asm": "",
+            "hex": ""
+          },
+          "txinwitness": [
+            "3044022004a472765a2fc706c16559f3c3a4d4a6af1db7fb33e935b1c16007b85c5a180302200532d294d9ab3dc479647642e5f01363c0703094eff366af83f2116a648be3ca01",
+            "03956bde5528d01f01bb612cffe399a5b95bab58f877caf2bc2f83885efc50f1fd"
+          ],
+          "sequence": 4294967293
+        }
+      ],
+      "vout": [
+        {
+          "value": 48.99999857,
+          "n": 0,
+          "scriptPubKey": {
+            "asm": "OP_HASH160 f1e61a119f50a76d4dcc4719de2408481d9cb687 OP_EQUAL",
+            "desc": "addr(2NFJGVGebVo4gwpBppYW97Gj98CMmx1yfXt)#9gty3vhf",
+            "hex": "a914f1e61a119f50a76d4dcc4719de2408481d9cb68787",
+            "address": "2NFJGVGebVo4gwpBppYW97Gj98CMmx1yfXt",
+            "type": "scripthash"
+          }
+        },
+        {
+          "value": 1.00000000,
+          "n": 1,
+          "scriptPubKey": {
+            "asm": "OP_HASH160 e6cbcb755e33dd3e89ef908be13c60315f32c482 OP_EQUAL",
+            "desc": "addr(2NEHZYK7V2EWxxu5y2KoPeDNV6LDLjozk7F)#mcuqghtk",
+            "hex": "a914e6cbcb755e33dd3e89ef908be13c60315f32c48287",
+            "address": "2NEHZYK7V2EWxxu5y2KoPeDNV6LDLjozk7F",
+            "type": "scripthash"
+          }
+        }
+      ],
+      "fee": 0.00000143,
+      "hex": "02000000000101fb0760b12fe49779bd118923cbe3ea38a0bf68a0bddae98b77b8c4b2c02e5dfc0000000000fdffffff02711010240100000017a914f1e61a119f50a76d4dcc4719de2408481d9cb6878700e1f5050000000017a914e6cbcb755e33dd3e89ef908be13c60315f32c4828702473044022004a472765a2fc706c16559f3c3a4d4a6af1db7fb33e935b1c16007b85c5a180302200532d294d9ab3dc479647642e5f01363c0703094eff366af83f2116a648be3ca012103956bde5528d01f01bb612cffe399a5b95bab58f877caf2bc2f83885efc50f1fd65000000"
+    }
+  ]
+}
+---------------Q4---------------
+Redeem tx hex: 0100000001d026e9778853573044740eefa580913b79c12fe3169318337042ea6ae8df8ad901000000c8473044022042138333e9055c2fe6a878ad32a140cb5b1da0ec1f74103194f0814203444fef02203b9cd56ffe9b03b7f3db43d7ee2cff7c10783eb309e2892035dc70f3591c6357012103ee5e5f3ffd24df9e8b91739a89e004837b5a240d3ec787df2350a9886d5d73b820107661134f21fc7c02223d50ab9eb3600bc3ffc3712423a1e47bb1f9a9dbf55f3ca8206c60f404f8167a38fc70eaf8aa17ac351023bef86bcb9d1086a19afe95bd53338876a9146765fc07965c793f0b5c6724648d5ca1f15f04a788acffffffff0118ddf505000000001600146765fc07965c793f0b5c6724648d5ca1f15f04a700000000
+Now sending redeem transaction.......
+Txid of submitted redeem tx:  ba974e7814c2e8ebf16a2005e4f8211ab61488c04ab636a804cc4e7b5ccf441b
+{
+  "hash": "325847484237bd22bda2ed41ab90219183ed17606f0899b7e80fbf66d954a221",
+  "confirmations": 1,
+  "height": 103,
+  "version": 536870912,
+  "versionHex": "20000000",
+  "merkleroot": "e2bccb0f5ffb1954e1cd0c76654e7abda3d15fc3879d37f5620fc268ec4d3d6b",
+  "time": 1681612588,
+  "mediantime": 1681612532,
+  "nonce": 0,
+  "bits": "207fffff",
+  "difficulty": 4.656542373906925e-10,
+  "chainwork": "00000000000000000000000000000000000000000000000000000000000000d0",
+  "nTx": 2,
+  "previousblockhash": "40889c6b927a9e97b977e3837bfbc6d45a4c48e12ee45058f2181dc6b58c4921",
+  "strippedsize": 495,
+  "size": 531,
+  "weight": 2016,
+  "tx": [
+    {
+      "txid": "9f13ea7b279800494792ff0ab54733755ea202bba122fe75704e7c9ec7444bee",
+      "hash": "12d629461867d1091ab60e8781716eb35c1fe57434e8ebec48611abc97a8d1c4",
+      "version": 2,
+      "size": 168,
+      "vsize": 141,
+      "weight": 564,
+      "locktime": 0,
+      "vin": [
+        {
+          "coinbase": "016700",
+          "txinwitness": [
+            "0000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "sequence": 4294967295
+        }
+      ],
+      "vout": [
+        {
+          "value": 50.00001000,
+          "n": 0,
+          "scriptPubKey": {
+            "asm": "0 bad8fb24857798ae558b47dfdcb873ca9372c620",
+            "desc": "addr(bcrt1qhtv0kfy9w7v2u4vtgl0aewrne2fh933ql5shq5)#sdr2zj5e",
+            "hex": "0014bad8fb24857798ae558b47dfdcb873ca9372c620",
+            "address": "bcrt1qhtv0kfy9w7v2u4vtgl0aewrne2fh933ql5shq5",
+            "type": "witness_v0_keyhash"
+          }
+        },
+        {
+          "value": 0.00000000,
+          "n": 1,
+          "scriptPubKey": {
+            "asm": "OP_RETURN aa21a9ed569db8c30069319f51ee3cfa207ed9e810a91410702eef828e002477af90f279",
+            "desc": "raw(6a24aa21a9ed569db8c30069319f51ee3cfa207ed9e810a91410702eef828e002477af90f279)#27p3c0sy",
+            "hex": "6a24aa21a9ed569db8c30069319f51ee3cfa207ed9e810a91410702eef828e002477af90f279",
+            "type": "nulldata"
+          }
+        }
+      ],
+      "hex": "020000000001010000000000000000000000000000000000000000000000000000000000000000ffffffff03016700ffffffff02e8f5052a01000000160014bad8fb24857798ae558b47dfdcb873ca9372c6200000000000000000266a24aa21a9ed569db8c30069319f51ee3cfa207ed9e810a91410702eef828e002477af90f2790120000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "txid": "ba974e7814c2e8ebf16a2005e4f8211ab61488c04ab636a804cc4e7b5ccf441b",
+      "hash": "ba974e7814c2e8ebf16a2005e4f8211ab61488c04ab636a804cc4e7b5ccf441b",
+      "version": 1,
+      "size": 282,
+      "vsize": 282,
+      "weight": 1128,
+      "locktime": 0,
+      "vin": [
+        {
+          "txid": "d98adfe86aea427033189316e32fc1793b9180a5ef0e74443057538877e926d0",
+          "vout": 1,
+          "scriptSig": {
+            "asm": "3044022042138333e9055c2fe6a878ad32a140cb5b1da0ec1f74103194f0814203444fef02203b9cd56ffe9b03b7f3db43d7ee2cff7c10783eb309e2892035dc70f3591c6357[ALL] 03ee5e5f3ffd24df9e8b91739a89e004837b5a240d3ec787df2350a9886d5d73b8 107661134f21fc7c02223d50ab9eb3600bc3ffc3712423a1e47bb1f9a9dbf55f a8206c60f404f8167a38fc70eaf8aa17ac351023bef86bcb9d1086a19afe95bd53338876a9146765fc07965c793f0b5c6724648d5ca1f15f04a788ac",
+            "hex": "473044022042138333e9055c2fe6a878ad32a140cb5b1da0ec1f74103194f0814203444fef02203b9cd56ffe9b03b7f3db43d7ee2cff7c10783eb309e2892035dc70f3591c6357012103ee5e5f3ffd24df9e8b91739a89e004837b5a240d3ec787df2350a9886d5d73b820107661134f21fc7c02223d50ab9eb3600bc3ffc3712423a1e47bb1f9a9dbf55f3ca8206c60f404f8167a38fc70eaf8aa17ac351023bef86bcb9d1086a19afe95bd53338876a9146765fc07965c793f0b5c6724648d5ca1f15f04a788ac"
+          },
+          "sequence": 4294967295
+        }
+      ],
+      "vout": [
+        {
+          "value": 0.99999000,
+          "n": 0,
+          "scriptPubKey": {
+            "asm": "0 6765fc07965c793f0b5c6724648d5ca1f15f04a7",
+            "desc": "addr(bcrt1qvajlcpukt3un7z6uvujxfr2u58c47p98fk52vt)#fjvtcx49",
+            "hex": "00146765fc07965c793f0b5c6724648d5ca1f15f04a7",
+            "address": "bcrt1qvajlcpukt3un7z6uvujxfr2u58c47p98fk52vt",
+            "type": "witness_v0_keyhash"
+          }
+        }
+      ],
+      "fee": 0.00001000,
+      "hex": "0100000001d026e9778853573044740eefa580913b79c12fe3169318337042ea6ae8df8ad901000000c8473044022042138333e9055c2fe6a878ad32a140cb5b1da0ec1f74103194f0814203444fef02203b9cd56ffe9b03b7f3db43d7ee2cff7c10783eb309e2892035dc70f3591c6357012103ee5e5f3ffd24df9e8b91739a89e004837b5a240d3ec787df2350a9886d5d73b820107661134f21fc7c02223d50ab9eb3600bc3ffc3712423a1e47bb1f9a9dbf55f3ca8206c60f404f8167a38fc70eaf8aa17ac351023bef86bcb9d1086a19afe95bd53338876a9146765fc07965c793f0b5c6724648d5ca1f15f04a788acffffffff0118ddf505000000001600146765fc07965c793f0b5c6724648d5ca1f15f04a700000000"
+    }
+  ]
+}
+charles@charless-MacBook-Pro ~ % 
