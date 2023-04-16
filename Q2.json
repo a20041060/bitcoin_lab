@@ -1,0 +1,113 @@
+{
+  "hash": "058dbba626554ecac09411d306a7dccad1f0451c6ed9fde44acd5717d1eddbeb",
+  "confirmations": 1,
+  "height": 102,
+  "version": 536870912,
+  "versionHex": "20000000",
+  "merkleroot": "ea839e9d1e526ff1e660da0187543d210652d8167e982a56d0f2de97da170aeb",
+  "time": 1681612734,
+  "mediantime": 1681612703,
+  "nonce": 0,
+  "bits": "207fffff",
+  "difficulty": 4.656542373906925e-10,
+  "chainwork": "00000000000000000000000000000000000000000000000000000000000000ce",
+  "nTx": 2,
+  "previousblockhash": "52b350a2df34c154ef38f68643615d92b86e39591ce2f069e43bcbaf11a3fb80",
+  "strippedsize": 328,
+  "size": 473,
+  "weight": 1457,
+  "tx": [
+    {
+      "txid": "3274550bbc3873c234101c458e8685c8c107d3531c7e90a62e37894325a5de46",
+      "hash": "6f05279113da2664836075a7ecf550ea260f7e6e85d6c06bc5faefaa510126f6",
+      "version": 2,
+      "size": 168,
+      "vsize": 141,
+      "weight": 564,
+      "locktime": 0,
+      "vin": [
+        {
+          "coinbase": "016600",
+          "txinwitness": [
+            "0000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          "sequence": 4294967295
+        }
+      ],
+      "vout": [
+        {
+          "value": 50.00000143,
+          "n": 0,
+          "scriptPubKey": {
+            "asm": "0 4905bceaf184cadedc66248ac5e52ad0ddddc1c2",
+            "desc": "addr(bcrt1qfyzme6h3sn9dahrxyj9vtef26rwamswzecfz8h)#3qr55vn8",
+            "hex": "00144905bceaf184cadedc66248ac5e52ad0ddddc1c2",
+            "address": "bcrt1qfyzme6h3sn9dahrxyj9vtef26rwamswzecfz8h",
+            "type": "witness_v0_keyhash"
+          }
+        },
+        {
+          "value": 0.0,
+          "n": 1,
+          "scriptPubKey": {
+            "asm": "OP_RETURN aa21a9ede9b9decb4aeb55512fc4023df3ae14e4ab054bb2bc6af760022bdd8890ee64ff",
+            "desc": "raw(6a24aa21a9ede9b9decb4aeb55512fc4023df3ae14e4ab054bb2bc6af760022bdd8890ee64ff)#yw8vmsk2",
+            "hex": "6a24aa21a9ede9b9decb4aeb55512fc4023df3ae14e4ab054bb2bc6af760022bdd8890ee64ff",
+            "type": "nulldata"
+          }
+        }
+      ],
+      "hex": "020000000001010000000000000000000000000000000000000000000000000000000000000000ffffffff03016600ffffffff028ff2052a010000001600144905bceaf184cadedc66248ac5e52ad0ddddc1c20000000000000000266a24aa21a9ede9b9decb4aeb55512fc4023df3ae14e4ab054bb2bc6af760022bdd8890ee64ff0120000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "txid": "00b72c16bb8d38b22049d53f317ebbbc3a79063c4a9336c30545dfc4bea434bf",
+      "hash": "1fcad7c760a7c6d399f8834a7b155b11de50686fceced3adc753604e95b1852d",
+      "version": 2,
+      "size": 224,
+      "vsize": 143,
+      "weight": 569,
+      "locktime": 101,
+      "vin": [
+        {
+          "txid": "b398ecd372d789934bd39af25244bb9c121044091a61a4109790e0a530d71952",
+          "vout": 0,
+          "scriptSig": {
+            "asm": "",
+            "hex": ""
+          },
+          "txinwitness": [
+            "304402203822f6edefcf8a1aad070c07c19952ed56c1238a6b8379b67805de6b880c1d240220445698bac5a069c5f2fedfa592f003b4d1d39ac470145a3da9215cdc6ee15ddf01",
+            "039968dd714fdd0eb7a4e8565f49e16c8c19ac2895031d943d644365e98bcc637c"
+          ],
+          "sequence": 4294967293
+        }
+      ],
+      "vout": [
+        {
+          "value": 48.99999857,
+          "n": 0,
+          "scriptPubKey": {
+            "asm": "OP_HASH160 2b0fcad18e82233700c6c0c29741b3facc084971 OP_EQUAL",
+            "desc": "addr(2MwAuxoF9qoVaYFeVXGZxeGiJN3Jn4t5TYc)#39wmgwrx",
+            "hex": "a9142b0fcad18e82233700c6c0c29741b3facc08497187",
+            "address": "2MwAuxoF9qoVaYFeVXGZxeGiJN3Jn4t5TYc",
+            "type": "scripthash"
+          }
+        },
+        {
+          "value": 1.0,
+          "n": 1,
+          "scriptPubKey": {
+            "asm": "OP_HASH160 f940b8c990bcb997797afbff0afc97785a5c1036 OP_EQUAL",
+            "desc": "addr(2NFy9n11ebhen3wzZFMCQJmxztAx2qWNDmG)#hjjpqy4q",
+            "hex": "a914f940b8c990bcb997797afbff0afc97785a5c103687",
+            "address": "2NFy9n11ebhen3wzZFMCQJmxztAx2qWNDmG",
+            "type": "scripthash"
+          }
+        }
+      ],
+      "fee": 0.00000143,
+      "hex": "020000000001015219d730a5e0909710a4611a094410129cbb4452f29ad34b9389d772d3ec98b30000000000fdffffff02711010240100000017a9142b0fcad18e82233700c6c0c29741b3facc0849718700e1f5050000000017a914f940b8c990bcb997797afbff0afc97785a5c1036870247304402203822f6edefcf8a1aad070c07c19952ed56c1238a6b8379b67805de6b880c1d240220445698bac5a069c5f2fedfa592f003b4d1d39ac470145a3da9215cdc6ee15ddf0121039968dd714fdd0eb7a4e8565f49e16c8c19ac2895031d943d644365e98bcc637c65000000"
+    }
+  ]
+}
